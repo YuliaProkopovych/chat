@@ -1,0 +1,417 @@
+body {
+		background-image: url('../images/back2.png');
+		margin: 0px;
+}
+body:first-child {
+	background-color: #FFF;
+}
+.chatPart {
+	width: 60%;
+	float:left;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.chatHistory {
+	background-color: #FFF;
+	max-height: 400px;
+	border: 2px solid #fa9f0f;
+}
+.chatHistoryTitle {
+	background-color: #fae0b7;
+	padding: 2px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+.usersPart {
+	width: 37%;
+	max-width: 450;
+	margin-left:63%;
+}
+.userslistTitle h2 {
+	display: inline-block;
+	margin-left: 10px;
+}
+.userslistTitle {
+	background-color: #d8d7e2;
+}
+.usersList {
+	background-color: #FFF;
+	border: 2px solid #635e9d;
+	margin-bottom: 10px;
+}
+.wrapper {
+	margin:auto;
+	width:1000px;
+	max-width:100%
+}
+textarea {
+	height: 100px;
+	margin-right: 10px;
+	min-width: 300px;
+	width: auto;
+	display: inline;
+	resize: none;
+	margin-left: 10px;
+}
+.messageSend {
+	border: 2px solid #fa9f0f;
+	background-color: #fae0b7;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+}
+#sendButton {
+	background-color: #fa9f0f;
+	font-size: 15px;
+	padding: 6px;
+	height: 100px;
+	display: inline-block;
+	width: 50px;
+	margin-right: 10px;
+	margin-top: 3px;
+	position: absolute;
+}
+.user {
+	background-color: #fff;
+		border: 1px solid black; 
+	display: inline-block;
+	position: relative;
+    width:100px;
+    height:100px;    
+    overflow:hidden;
+    position: relative;
+
+}
+.icon {
+	height: 20px;
+}
+
+.user img {
+
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
+.tile .user {
+	margin-left: 4px;
+}
+.tile .user span {
+	display: none;
+}
+.tile .user img:hover + span{
+	bottom:0;
+	background: rgba(51,51,51,0.85);
+	position: absolute;
+	color: #fff;
+	text-align: center;
+    pointer-events: none;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+/*login form*/
+.loginView {
+	
+	width: 300px;
+	margin: auto;
+	background-color: #d8d7e2;
+	border-color: #635e9d;
+	border-style: solid;
+	border-width: 8px;
+	padding: 10px;
+	margin-top: 50px;
+}
+.inputSex span {
+	margin-right: 10px;
+}
+.inputSex .checked {
+	border: 1px solid #000;
+	background-color: #fff;
+
+}
+.inputSex {
+	margin-top: 10px;
+}
+.inputSex .icon:hover {
+	background-color: #fff;
+}
+#form {
+	margin-bottom: 0px;
+	height: 100%;
+}
+#form input[type=radio]{
+	display: none;
+}
+#selectImage {
+	float: left;
+	margin-top: 70px;
+}
+.goToChat {
+	margin-top: 20px;
+}
+#chatNow {
+
+	background-color: #fa9f0f;
+	font-size: 15px;
+	padding: 6px;
+}
+.inputImage {
+	display: inline-block;
+	width: 100%;
+}
+.inputImage .user{
+	float: right;
+	margin-right: 20px;
+
+}
+input[type=button] {
+    border: 1px solid black; 
+	border-radius: 3px;
+	padding: 4px;
+	color: black;
+	background-color: #fff;
+
+	}
+input[type=text] {
+    border: 1px solid black; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 6px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+.loginView h2 {
+	text-align: center;
+}
+.loginView input {
+	margin: 0px 0px 0px 5px; 
+}
+.loginView input[type='text'] {
+	width: 200px; 
+}
+#imageChoise {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.goToChat {
+	text-align: center;
+}
+
+/*processing form*/
+#progress-bar {
+
+}
+.loggingIn {
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	background-color: #d8d7e2;
+	border-color: #635e9d;
+	border-style: solid;
+	border-width: 8px;
+	padding: 10px;
+	margin-top: 50px;
+	text-align: center;
+
+}
+
+.listSettings {
+	height: 20px;
+	width: 20px;
+	background-image: url('../images/list.png');
+	display: inline-block;
+}
+.list .user img {
+	height: 50px;
+	display: inline;
+	float: left;
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	min-width: 0px;
+}
+.list .user span {
+	display: inline-block;
+	margin-left: 10px;
+}
+.list .user {
+	margin-left: 10px;
+	baseline: 70px;
+	display: block;
+	height:70px;
+	line-height: 60px;
+	vertical-align: middle;
+	width: 100%;
+	border: none;
+}
+
+#send {
+	display: inline-block;
+}
+.messages {
+	height: 300px;
+	overflow-y: auto;
+}
+.users {
+	max-height: 300px;
+	overflow: auto;
+	min-height: 60px;
+}
+.error {
+	display: block;
+	color: #cf0f30;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.notification-bar {  
+    position: absolute;   
+}  
+.notification-text {  
+    background-color: #91e200;  
+    padding: 15px;  
+    color: black;  
+    font-size: 14px;  
+    border: 1px solid black;
+    text-align: center;  
+    position: fixed;
+    bottom: 0;
+    right: 0;  
+    display: none;
+} 
+.dissapear {
+	-webkit-transition: ease 350ms;  
+    -moz-transition: ease 350ms;  
+    -o-transition: ease 350ms;  
+    transition: ease 350ms;  
+      
+    -webkit-transform: translateY(100%);  
+    -moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    transform: translateY(100%); 
+} 
+.appear {
+	display: block;
+	-webkit-transition: ease 350ms;  
+    -moz-transition: ease 350ms;  
+    -o-transition: ease 350ms;  
+    transition: ease 350ms;  
+      
+    -webkit-transform: translateY(0%);  
+    -moz-transform: translateY(0%);  
+    -o-transform: translateY(0%);  
+    transform: translateY(0%); 
+} 
+.msgText {
+	width: 100%;
+	word-wrap: break-word;
+	min-height: 22px;
+}
+.msgText img{
+	height: 19px;
+	margin: 0px 2px 0px 2px;
+	vertical-align: middle;
+	
+}
+.invisible {
+	display: none;
+}
+.sex {
+	width: 20px;
+	background-color: #fff;
+}
+.male {
+	color: blue;
+	font-size: 20px;
+	margin-left: 2px;
+}
+
+.female {
+	color: red;
+	font-size: 20px;
+	margin-left: 2px;
+}
+
+.chatView {
+	margin-top: 40px;
+}
+.logoutButton {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.logoutButton input {
+	background-color: #fada0f;
+	padding: 5px;
+	border-radius: 0px;
+}
+.feedbackText {
+	border: none;
+	resize: none;
+}
+/*choosing image*/
+.upload {
+	margin: auto;
+	margin-top: 50px;
+	position: absolute;
+	background-color: #fff;
+    border: 1px solid black;
+    	z-index: 1;
+}
+.wholeImage {
+	max-height: 700px;
+	max-width: 900px;
+	display: block;
+}
+.croppable {
+	position: absolute;
+	z-index: 2;
+	width: 100px;
+	height: 100px;
+}
+.partToCrop {
+	background-color: #fff;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.hline {
+	height: 1px !important;
+	position: absolute;
+	width: 100%;
+	background-image: url('../images/selection.gif');
+}
+.rightLine {
+	right: 0px;
+}
+.topLine {
+	top: 0px;
+}
+.leftLine {
+	left: 0px;
+}
+.bottomLine {
+	bottom: 0px;
+}
+.vline {
+	width: 1px;
+	height: 100%;
+	background-image: url('../images/selection.gif');
+	display: inline-block;
+	position: absolute;
+}
