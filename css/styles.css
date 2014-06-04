@@ -209,9 +209,6 @@ input[type=text] {
 }
 
 /*processing form*/
-#progress-bar {
-
-}
 .loggingIn {
 	height: 300px;
 	width: 300px;
@@ -276,7 +273,43 @@ input[type=text] {
 	margin-bottom: 5px;
 	text-align: center;
 }
+/*hint styles*/
+.hint {
+	color: #cf0f30;
+	text-align: left;
+	position: absolute;
+    border: 1px solid #c93;
+    padding: 10px 12px;
+    display: inline;
+    width: 200px;
+    z-index: 4;
+    background-color: #fff;
+}
+.closeGliph {
+	height: 16px;
+	width: 16px;
+	border-radius: 8px;
+	background-color: #cf0f30;
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	right: 8px;
+	top: 8px;
+}
+.closeGliph div {
+	font-size: 20px;
+	color: #000;
+	bottom: 3px;
+	position: relative;
+	-moz-transform: rotate(-45deg);
+}
+.hint .text {
+	float: left;
+	margin-right: 20px;
+}
 
+/*notifications about user entering chat or leaving it*/
 .notification-bar {  
     position: absolute;   
 }  
@@ -314,7 +347,8 @@ input[type=text] {
     -moz-transform: translateY(0%);  
     -o-transform: translateY(0%);  
     transform: translateY(0%); 
-} 
+}
+/*chat message styles*/
 .msgText {
 	width: 100%;
 	word-wrap: break-word;
@@ -326,6 +360,7 @@ input[type=text] {
 	vertical-align: middle;
 	
 }
+/**/
 .invisible {
 	display: none;
 }

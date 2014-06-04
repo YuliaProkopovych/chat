@@ -29,7 +29,6 @@ $( document ).ready(function() {
 		$('.loggingIn').addClass('invisible');
 		$('.loginView').removeClass('invisible');
 		$('.conError').html('Ooops.. Server connection failed. Try again later!')
-
 		console.log(err.message);
 	}
 
@@ -140,21 +139,23 @@ $(window).onbeforeunload = function() {
     		errors.push('already exists');
     	}
 		if (errors.length > 0) {
-			
-			var errMsg = 'Username ' + errors[0];
-			for (var i = 1; i < errors.length; i++) {
-				errMsg += ' and ' + errors[i];
-			}
-			errMsg += '!';
-			$('.nameError').html(errMsg);
-			console.log(errors);
+			displayHint(errors);
 			return false;
 		}
 		else {
 			$('.nameError').html('');
 			return true;
 		}
-		//getUsersList();
+	}
+	function displayHint(errors) {
+			var errMsg = 'Username ' + errors[0];
+			for (var i = 1; i < errors.length; i++) {
+				errMsg += ' and ' + errors[i];
+			}
+			errMsg += '!';
+			$('.nameError').html(errMsg);
+			$('.hint').removeClass('invisible');
+			$('.text').html(errMsg);
 	}
 
 	var usernameExists = function(username) {
@@ -180,7 +181,6 @@ $(window).onbeforeunload = function() {
 	$('#imageChoise').on('change',chooseImage);
 	$('#imageChoise').on('click',resetImage);
 	$('#username').on('focusout',validateName);
-	//$( window ).unload(logout);
 	$('#selectImage').click(function(e) {
   		$('#imageChoise').click();
 	});
