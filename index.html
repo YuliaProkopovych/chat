@@ -2,7 +2,8 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet/less" href="css/styles.less" />
+	<script type="text/javascript" src="js/less-1.7.0.min.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
 	<title>Chaty</title>
 </head>
@@ -33,11 +34,12 @@
 				<div class="conError error"></div>
 				<form id="form">
 					<div class="inputUsername">
-							<span>Name</span><input id="username" type="text"></input>
-							<div class="hint invisible">
-								<div class="text"></div>
-								<div class="closeGliph"><div>+</div></div>
-							</div>
+						<span>Name</span><input id="username" type="text"></input>
+						<div class="hint nameHint invisible">
+							<div class="text"></div>
+							<div class="closeGliph"><div>+</div></div>
+							<div class="arrow-left"></div>
+						</div>
 					</div>
 					<div class="inputSex">
 						<span>Sex</span>

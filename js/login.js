@@ -143,22 +143,32 @@ $(window).onbeforeunload = function() {
 			return false;
 		}
 		else {
-			$('.nameError').html('');
+			hideHint($('.nameHint'));
 			return true;
 		}
 	}
+
 	function displayHint(errors) {
-			var errMsg = 'Username ' + errors[0];
-			for (var i = 1; i < errors.length; i++) {
-				errMsg += ' and ' + errors[i];
-			}
-			errMsg += '!';
-			$('.nameError').html(errMsg);
-			$('.hint').removeClass('invisible');
-			$('.text').html(errMsg);
+		var errMsg = 'Username ' + errors[0];
+		for (var i = 1; i < errors.length; i++) {
+			errMsg += ' and ' + errors[i];
+		}
+		errMsg += '!';
+		$('.nameError').html(errMsg);
+		$('.hint').removeClass('invisible');
+		$('.text').html(errMsg);
+		$('.closeGliph').on('click', closeHint);
 	}
 
-	var usernameExists = function(username) {
+	function closeHint(e) {
+		hideHint($(this));
+	}
+
+	function hideHint(hint) {
+		hint.addClass('invisible');
+	}
+
+	function usernameExists(username) {
 		var exists  = false;
 			/*$.ajax({
 				type: "GET",
